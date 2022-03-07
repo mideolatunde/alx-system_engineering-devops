@@ -1,3 +1,2 @@
 #!/bin/bash
-find . -name \*.gif -type f -printf "%f
-" | LC_COLLATE=C sort --ignore-case | rev | cut -c 5- | rev
+cut -c1 | paste -s | tr -d "[:blank:]"
